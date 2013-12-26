@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Romeo</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header id="Nav_header">
+    <div id="logo">
+      <img>
+    </div>
+    <nav id="main_navigation">
+      <ul>
+        <li><%= link_to("HOME", albums_path) %></li>
+        <li><%= link_to("ABOUT", about_path) %></li>
+        <li><%= link_to("CONTACT", contact_path) %></li>
+      </ul>
+    </nav>
+    <div id="social_nav">
+      <%# -- Twitter Follow Tag %>
+      <%= link_to(image_tag('social/twitter_icon.png'), "http://twitter.com/bethtabler")%>
+      <%# -- Facebook Follow Tag %>
+      <%= link_to(image_tag('social/facebook_icon.png'), "https://www.facebook.com/elizabeth.tabler")%>
+    </div>
+  </header>  
+
+<%= yield %>
+
+</body>
+</html>
