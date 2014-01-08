@@ -1,14 +1,14 @@
 
 
 body {
-  background-color: white;
+  background-color: #bababa;
   margin: 0;
   padding: 0;
 }
 
 /* Header */
 #nav_header {
-  background: #fff;
+  background: white;
   box-shadow: 0 1px 12px -3px rgba(0,0,0,0.3);
   border-bottom: 1px #ddd;
   height: 45px;
@@ -20,22 +20,32 @@ body {
   z-index: 100000;
 }
 
-#logo {
+#play_name {
+  width: 260px;
+  height: 40px;
+  float: left;
+  font-style: italic;
+  display: inline;
+  font-family: 'Kotta One', serif;
+  font-size: 25px;
+  padding-left: 40px;
+  margin-top: 10px;
+  text-transform: uppercase;
 }
 
 #main_navigation {
   float: left; 
-  height: 22px;
-  margin-top: -3px;
-  width: 350px; 
+  height: 40px;
+  width: 500px; 
 }
 
 #main_navigation li {
-  color: #333;
+  color: #777;
   display: inline;
-  font-family: Arial,Verdana,Helvetica,sans-serif;
-  font-size: 12px;
-  height: 17px;
+  font-family: 'Kotta One', serif;
+  font-size: 15px;
+  height: 20px;
+  letter-spacing: 1px;
   line-height: 10px;
   overflow: hidden;
   padding: -1px 28px;
@@ -53,15 +63,40 @@ body {
 } 
 
 #social_nav {
-  height: 22px;
+  height: 45px;
   float: right;
-  margin-bottom: 8px;
+  margin-right: 20px;
 }
 
 #social_nav img {
   display: inline;  
   height: 40px;
   width: 40px;
+}
+
+/* Main Article */
+article {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#main_head {
+  width: 410px;
+  height: 600px;
+  margin-left: 0;
+}
+
+#intro_h1 {
+  font-family: 'Kotta One', serif;
+  font-size: 110px;
+  font-style: italic;
+  text-align: left;
+  width: 400px;
+  height: 237px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  line-height: 85%;
 }
 
 
