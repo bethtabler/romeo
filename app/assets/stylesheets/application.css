@@ -1,9 +1,8 @@
 
 
 body {
-  background-color: #bababa;
+  background-color: white;
   margin: 0;
-  padding: 0;
 }
 
 /* Header */
@@ -11,92 +10,129 @@ body {
   background: white;
   box-shadow: 0 1px 12px -3px rgba(0,0,0,0.3);
   border-bottom: 1px #ddd;
-  height: 45px;
-  left: 0;
+  height: 3em;
   position: fixed !important;
-  right: 0;
   top: 0;
-  width: 1440px;
+  width: 100%;
   z-index: 100000;
 }
 
 #play_name {
-  width: 260px;
-  height: 40px;
+  width: 21.66666%;
   float: left;
-  font-style: italic;
   display: inline;
-  font-family: 'Kotta One', serif;
-  font-size: 25px;
-  padding-left: 40px;
-  margin-top: 10px;
+  font-family: 'Droid Serif', serif;
+  font-size: 1.56em;
+  padding-left: 3%;
+  margin-top: 1%;
   text-transform: uppercase;
+  padding-right: 1%;
 }
 
 #main_navigation {
   float: left; 
-  height: 40px;
-  width: 500px; 
+  width: 41.66667%; 
+  padding-top: .2%
 }
 
 #main_navigation li {
   color: #777;
   display: inline;
-  font-family: 'Kotta One', serif;
-  font-size: 15px;
-  height: 20px;
-  letter-spacing: 1px;
-  line-height: 10px;
+  font-family: 'Droid Sans', sans-serif;
+  letter-spacing: .063em;
   overflow: hidden;
-  padding: -1px 28px;
-  padding-left: 29px;
+  padding-left: 1.83em;
   text-align: left;
   text-transform: uppercase; 
   text-decoration: none;
-  width: 60px;
 }
 
 #main_navigation li a:hover {
   background-color: #E2E2E2;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px; 
+  -webkit-border-radius: .625em;
+  -moz-border-radius: .625em; 
 } 
 
 #social_nav {
-  height: 45px;
   float: right;
-  margin-right: 20px;
+  padding-right: 3%;
 }
 
 #social_nav img {
   display: inline;  
-  height: 40px;
-  width: 40px;
+  height: 3em;
+  width: 3em;
 }
 
 /* Main Article */
-article {
-  width: 1200px;
+article {  
   margin: 0 auto;
+  width: 90%;
 }
 
+#intro_section {
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-radial-gradient(center bottom, circle farthest-corner, #8C8C8C 0%, #424542 100%);
+  /* Mozilla Firefox */ 
+  background-image: -moz-radial-gradient(center bottom, circle farthest-corner, #8C8C8C 0%, #424542 100%);
+  /* Opera */ 
+  background-image: -o-radial-gradient(center bottom, circle farthest-corner, #8C8C8C 0%, #424542 100%);
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(radial, center bottom, 0, center bottom, 553, color-stop(0, #8C8C8C), color-stop(1, #424542));
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-radial-gradient(center bottom, circle farthest-corner, #8C8C8C 0%, #424542 100%);
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: radial-gradient(circle farthest-corner at center bottom, #8C8C8C 0%, #424542 100%);
+  width: 100%;
+}
+
+
 #main_head {
-  width: 410px;
-  height: 600px;
-  margin-left: 0;
+  width: 40%;
+  padding: 5%;
+  height: 700px; 
+  margin-right: 0px;
+}
+
+#intro_photo {
+  float: right;
+  position: absolute;
+  width: 50%;
+  z-index: 2;
+}
+
+#romeo_juliet_intro {
+  width: 50%;
+  float: right;
 }
 
 #intro_h1 {
-  font-family: 'Kotta One', serif;
-  font-size: 110px;
+  font-family: 'Merriweather', serif;
+  font-size: 6.875em;
   font-style: italic;
-  text-align: left;
-  width: 400px;
-  height: 237px;
-  padding-bottom: 15px;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: -2px;
-  line-height: 85%;
+  line-height: 90%;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+#intro_h2 {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: -2px;
+  line-height: 90%;
+  margin: 0px;
+}
+
+#intro_h3 {
+  font-family: 'Droid Serif', serif;
+  font-size: 1em;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 

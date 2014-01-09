@@ -5,7 +5,7 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-  <link href='http://fonts.googleapis.com/css?family=Kotta+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Merriweather:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <header id="nav_header">
@@ -28,12 +28,17 @@
   </header>  
   <body>
     <article>
-      <section id="main_head">
-        <h1 id="intro_h1">romeo and juliet</h1>
-          <cite>by william shakespeare</cite>
-          <!-- <img id="romeo_juliet.png" alt="Romeo and Juliet">  -->
-      </section>
-    <article>
+      <div id="intro_section">
+        <section id="main_head">
+          <h1 id="intro_h1">romeo and juliet</h1>
+            <h2 id="intro_h2">also known as - the most excellent and lamentable tragedy of romeo and juliet</h2>
+              <h3 id="intro_h3">by william shakespeare</h3>           
+        </section>
+        <div id="intro_photo">
+        <%= image_tag("romeo_juliet.png", id: "romeo_juliet_intro") %>
+        </div>
+      </div>
+    </article>
       
 </body>
 </html>
