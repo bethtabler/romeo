@@ -26,19 +26,53 @@
       <%= link_to(image_tag('social/Facebook.png'), "https://www.facebook.com/elizabeth.tabler")%>
     </div>
   </header>  
-  <body>
     <article>
+
       <div id="intro_section">
         <section id="main_head">
           <h1 id="intro_h1">romeo and juliet</h1>
-            <h2 id="intro_h2">also known as - the most excellent and lamentable tragedy of romeo and juliet</h2>
-              <h3 id="intro_h3">by william shakespeare</h3>           
+            <h2 id="intro_h2"><span id="less_important"><em>also known as</em></span> - the most excellent and lamentable tragedy of romeo and juliet</h2>
+              <h3 id="intro_h3"><em>by</em> william shakespeare</h3> 
+          <blockquote>When he shall die,
+          Take him and cut him out in little stars,
+          And he will make the face of heaven so fine
+          That all the world will be in love with night
+          And pay no worship to the garish sun.
+            <cite>act III, scene II</cite>   
+          </blockquote>             
         </section>
-        <div id="intro_photo">
+        <div id="intro_photo"> 
         <%= image_tag("romeo_juliet.png", id: "romeo_juliet_intro") %>
         </div>
       </div>
-    </article>
+
       
+      <section id="prologue_bounding">
+        <!-- <aside id="aside_left">
+          <%= image_tag("building/building_left.png", id: "building_left") %>
+        </aside> -->
+        <p id="prologue_p">
+          Two households, both alike in dignity,
+          In fair Verona, where we lay our scene,
+          From ancient grudge break to new mutiny,
+          Where civil blood makes civil hands unclean.
+          From forth the fatal loins of these two foes
+          A pair of star-cross'd lovers take their life;
+          Whose misadventured piteous overthrows
+          Do with their death bury their parents' strife.
+          The fearful passage of their death-mark'd love,
+          And the continuance of their parents' rage,
+          Which, but their children's end, nought could remove,
+          Is now the two hours' traffic of our stage;
+          The which if you with patient ears attend,
+          What here shall miss, our toil shall strive to mend.
+        </p>
+        <!-- <aside id="aside_right">
+          <%= image_tag("building/building_right.png", id: "building_right") %>
+        </aside> -->
+      </section>
+      
+
+    </article>     
 </body>
 </html>

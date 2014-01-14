@@ -72,18 +72,25 @@ article {
 
 #intro_section {
   /* IE10 Consumer Preview */ 
-  background-image: -ms-radial-gradient(center bottom, circle farthest-corner, #8C8C8C 0%, #424542 100%);
+  background-image: -ms-radial-gradient(left bottom, circle farthest-side, #000000 0%, #424542 100%);
+
   /* Mozilla Firefox */ 
-  background-image: -moz-radial-gradient(center bottom, circle farthest-corner, #8C8C8C 0%, #424542 100%);
+  background-image: -moz-radial-gradient(left bottom, circle farthest-side, #000000 0%, #424542 100%);
+
   /* Opera */ 
-  background-image: -o-radial-gradient(center bottom, circle farthest-corner, #8C8C8C 0%, #424542 100%);
+  background-image: -o-radial-gradient(left bottom, circle farthest-side, #000000 0%, #424542 100%);
+
   /* Webkit (Safari/Chrome 10) */ 
-  background-image: -webkit-gradient(radial, center bottom, 0, center bottom, 553, color-stop(0, #8C8C8C), color-stop(1, #424542));
+  background-image: -webkit-gradient(radial, left bottom, 0, left bottom, 954, color-stop(0, #000000), color-stop(1, #424542));
+
   /* Webkit (Chrome 11+) */ 
-  background-image: -webkit-radial-gradient(center bottom, circle farthest-corner, #8C8C8C 0%, #424542 100%);
+  background-image: -webkit-radial-gradient(left bottom, circle farthest-side, #000000 0%, #424542 100%);
+
   /* W3C Markup, IE10 Release Preview */ 
-  background-image: radial-gradient(circle farthest-corner at center bottom, #8C8C8C 0%, #424542 100%);
+  background-image: radial-gradient(circle farthest-side at left bottom, #000000 0%, #424542 100%);
   width: 100%;
+  z-index: 1;
+  height: 800px;
 }
 
 
@@ -92,21 +99,18 @@ article {
   padding: 5%;
   height: 700px; 
   margin-right: 0px;
+  float: left;
 }
 
 #intro_photo {
   float: right;
-  position: absolute;
-  width: 50%;
-  z-index: 2;
+  width: 47%;
+  margin-top: 80px;
 }
 
-#romeo_juliet_intro {
-  width: 50%;
-  float: right;
-}
 
 #intro_h1 {
+  color: #e9e9ea;
   font-family: 'Merriweather', serif;
   font-size: 6.875em;
   font-style: italic;
@@ -114,25 +118,87 @@ article {
   text-transform: uppercase;
   letter-spacing: -2px;
   line-height: 90%;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom: 10px;
+  text-shadow: 3px 3px 2px #121212;
 }
 
 #intro_h2 {
+  color: white;
   font-family: 'Droid Sans', sans-serif;
   font-size: 1.5em;
   text-align: center;
   text-transform: capitalize;
-  letter-spacing: -2px;
-  line-height: 90%;
   margin: 0px;
 }
 
 #intro_h3 {
+  color: white;
   font-family: 'Droid Serif', serif;
   font-size: 1em;
   text-transform: capitalize;
   text-align: center;
 }
 
+#less_important {
+  font-size: .75em;
+}
 
+
+blockquote {
+font-family: 'Droid Sans', sans-serif;
+font-size: 1.15em;
+font-style: italic;
+margin: 0.25em 0;
+padding: 0.35em 40px;
+line-height: 1.45;
+padding-top: 30px;
+position: relative;
+color: #777;
+}
+
+blockquote:before {
+display: block;
+padding-left: 10px;
+content: "\201C";
+font-size: 80px;
+position: absolute;
+left: -20px;
+top: -20px;
+color: #7a7a7a;
+}
+
+cite {
+color: #999999;
+font-size: 14px;
+display: block;
+margin-top: 5px;
+}
+
+cite:before {
+content: "\2014 \2009";
+}
+
+/*Prologue*/
+
+
+#prologue_bounding {
+  background-image: url(building_left.png), url(building_right.png), url(clouds.png);
+  background-position: left bottom, right bottom, center top;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  border: 2px solid;
+  width: 100%;
+  margin: 0 auto;
+  height: 700px;
+  z-index: 2;
+}
+
+#prologue_p {
+  width: 600px;
+  margin: 0 auto;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 1.15em;
+  border: 2px solid;
+  height: 400px;
+}
